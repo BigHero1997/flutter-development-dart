@@ -1,0 +1,17 @@
+void main()
+{
+
+  // final keyword
+  final cityname = "mumbai";
+  // cityname = "pune";
+  
+  // Constant keyword
+  
+  const pi = 3.14;
+  // pi = 5;
+} 
+  class circle{
+    final radius = 5;
+    // const diameter = 2.5; // Only static fields can be declared as const
+    static const diameter = 2.5;
+  }
