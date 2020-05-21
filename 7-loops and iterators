@@ -1,0 +1,93 @@
+void main()
+{
+// for loop
+  int n = 5;
+  for(int i=0;i<n;i++)
+  {
+    print(n*i);
+  }
+  
+  
+//for .... in
+  List planetlist = ["sun","moon","mercury"];
+  for(String planet in planetlist)
+  {
+    print(planet);
+  }
+    
+  
+ // While Loop
+  
+  int j=1;
+  while(j<=10)
+  {
+    if(j%2==0){
+      print(j);
+    }
+    
+    j++;
+  }
+  
+  
+  //Do While Loop
+  
+  
+  int k = 1;
+  do{
+    if(k%2==0){
+    print(k);
+    }
+  
+  k++;
+  }
+  while(k<=10);
+    
+  
+// Break Keyword
+// Using Labels
+  
+  myouterloop : for(int i=1; i<=3; i++){
+    myinnerloop : for(int j=1;j<=3;j++)
+    {
+      print("$i $j");
+      
+      if(i==2 && j==2)
+      {
+        break myouterloop;
+      }
+     
+    }
+    
+  }
+ print("********************************");
+  
+
+  //Continue Keyword
+  // Using Labels
+  
+  for (int i = 1;i<=10;i++)
+  {
+    if(i%2==0){
+      continue;
+    }
+    print(i);
+  }
+  
+   print("********************************");
+  
+    outerloop : for(int i=1; i<=3; i++){
+    innerloop : for(int j=1;j<=3;j++)
+    {
+      
+      
+      if(i==2 && j==2)
+      {
+        continue outerloop;
+      }
+     print("$i $j");
+    }
+    
+  }
+  
+}
+
