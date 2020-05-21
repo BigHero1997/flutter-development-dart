@@ -23,6 +23,6 @@ void main()
   print(isAlive);
   
   //  NOTE: all data types in dart are objects.
-  //  so, their initial value is by default 'null'
+  //  so, their initial value is by default "null"
   
 }
