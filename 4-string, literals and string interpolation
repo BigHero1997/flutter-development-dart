@@ -1,0 +1,46 @@
+void main()
+{
+
+ // Literals
+  var age=20;
+  bool isAlive=false;
+  2.4;
+  "john";
+  
+  
+  // Various ways to use string literals in dart
+  
+  String s1 = "single";
+  String s2 = 'double';
+  //String s3= 'It's Easy';
+  String s3 = 'It\'s Easy';
+  String s4 = "It's Easy";
+  
+  //old method
+  String s5 = 'this is very large file. '+
+                'This is justa sample string in dart programming language';
+  // new method
+    String s6 = 'this is very large file. '
+                'This is just a sample string in dart programming language';
+  
+  
+  // String Interpolation
+  
+  String name = "Kevin";
+  String Message = "My Name is"+name;//old method
+  print(Message);
+  
+  String Message1 = "My Name is$name";//new method
+  print(Message1);
+  
+  print("the no of characters in string kevin is"+name.length.toString()); //old method
+  
+  print("the no of characters in string kevin is${name.length}"); // new method
+ 
+  
+  int l = 20;
+  int b = 10;
+  print("the sum of $l and $b is ${l+b}");
+  
+
+ }
