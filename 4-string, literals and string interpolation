@@ -21,7 +21,7 @@ void main()
                 'This is justa sample string in dart programming language';
   // new method
     String s6 = 'this is very large file. '
-                'This is just a sample string in dart programming language';
+                'This is just a sample string in dart programming llanguage';
   
   
   // String Interpolation
