@@ -1,0 +1,128 @@
+void main()
+{
+ findPerimeter(4,2);
+ int rectArea = getArea(10,5);
+  print("The Area is $rectArea");
+}
+
+void findPerimeter(int length, int breadth){
+  
+  int perimeter = 2*(length+breadth);
+  print("Perimeter is $perimeter");
+  
+}
+
+int getArea(int length, int breadth){
+  
+  int area = length*breadth;
+  return area;  // if we comment this line of code then the output will be null.
+                //because we dont have any return statement in it.
+}
+
+
+                       /* FUNCTIONS AS EXPRESSIONS */
+                          /***Short Hand Syntax***/
+
+void main()
+{
+ findPerimeter(4,2);
+ int rectArea = getArea(10,5);
+  print("The Area is $rectArea");
+}
+
+void findPerimeter(int length, int breadth) => print("Perimeter is ${2*(length+breadth)}");
+//This Is a function as expression  
+// => is called as fat arrow. In this we dont have to use the curly brackets{}.  
+
+
+int getArea(int length, int breadth) =>  length*breadth;  // never use return keyword
+                                                          // while using fat arrow
+                                                          
+   
+   
+                     
+                     
+                     /* OPTIONAL POSITIONAL PARAMETERS */
+                         
+// 1.Required Parameters
+// 2.Optional Positional Parameters
+
+
+void main()
+{
+ printCities("mumbai","pune");
+ print("****************************");
+ printCountries("india");
+}
+
+
+void printCities(String name1, String name2, [String name3]){ //using [] this we can make any
+  print("Name is $name1");                                    //parameter optional
+  print("Name is $name2");
+  print("Name is $name3");
+}
+      
+      
+      
+      
+      
+      
+                       /* OPTIONAL NAMED PARAMETERS */
+                         
+
+void main()
+{
+  
+  findVolume(10, breadth : 10, height : 20);
+  findVolume(10, height : 10, breadth : 50);  //sequence doesn't matters
+}
+
+int findVolume(int length, {int breadth, int height}){ // by using {int parameter} curly brackets
+                                                       // we can create named parameter
+  
+  print("Length is $length");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  
+  print("volume is ${length * breadth * height}");
+}
+
+
+
+
+
+
+                       /* OPTIONAL DEFAULT PARAMETERS */
+                         
+
+
+
+void main()
+{
+  
+  findVolume(10);
+  print("");
+  findVolume(10 ,height:30, breadth:5);  //sequence doesn't matters
+}
+
+int findVolume(int length, {int breadth = 2, int height = 5}){ // by assigning values in method  
+                                                       // we can create default parameter
+  
+  print("Length is $length");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  
+  print("volume is ${length * breadth * height}");
+}
+
+
+                     
+
+
+void printCountries(String name1, [String name2, String name3]){
+  print("Name is $name1");
+  print("Name is $name2");
+  print("Name is $name3");
+}
+         
+                                                          
