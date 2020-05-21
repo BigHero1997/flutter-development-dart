@@ -1,0 +1,28 @@
+void main()
+{
+
+  //numbers:integer
+  int age=10;
+  var count = 10; //  it is inferred as integer automatically by the compiler
+ 
+  
+  print(age);
+  print(count);
+
+  
+  //numbers:double
+  double rack = 20.5;
+  print(rack);
+  
+  //string
+  String name = "harry";
+  print(name);
+  
+  //boolean
+  bool isAlive = true;
+  print(isAlive);
+  
+  //  NOTE: all data types in dart are objects.
+  //  so, their initial value is by default 'null'
+  
+}
