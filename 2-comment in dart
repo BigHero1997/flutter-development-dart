@@ -4,7 +4,7 @@ void main()
   print("Hello World");
   
   /* this is multiline comment
-  print("This is my 1st application");
+  print('This is my 1st application');
   print(4-1);
   print(true); */
   
