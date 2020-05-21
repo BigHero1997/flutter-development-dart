@@ -1,0 +1,101 @@
+void main()
+{
+  
+  // If and else Statements
+  
+  int salary = 10000;
+  if(salary>15000)
+  {
+    print("congratulations");
+  }
+  else
+  {
+    print("sorry");
+  }
+  
+  
+  // If Else If Ladded Statements
+  
+  int marks = 24;
+  
+  if(marks>=90 && marks<100)
+  {
+    print("1st class");
+  }
+  else if(marks>=75 && marks <90)
+  {
+    print("2nd class");
+  }
+  else if(marks >= 50 && marks<75)
+  {
+    print("3rd class");
+  }
+  else if(marks >= 35 && marks<50)
+  {
+    print("Pass");
+  }
+  else if(marks<35)
+  {
+    print("Fail");
+  }
+  else
+  {
+    print("Invalid");
+  }
+  
+  
+  /* CONDITIONAL STATEMENTS */
+  
+  // 1. condition ? exp1 : exp2
+  // if condition is true, evaluates expr1 (and returns its value)
+  // otherwise, evaluates and returns the value of expr2
+  
+  //old method
+  int a = 10;
+  int b = 20;
+  if(a<b){
+    print("$a is smaller");
+  }
+  else{
+    print("$b is smaller");
+  }
+  
+  //dart method
+  
+  a<b ? print("$a is smaller") :  print("$b is smaller");
+ 
+  
+  int smallnumber = a<b ? a : b;
+  print("$smallnumber is smaller");
+  
+  
+  // 2. exp1 ?? exp2
+  // if exp1 is non-null, returns its value; otherwise, evaluates and
+  // returns the value of exp2
+  
+  String name = null;
+  String nametoprint = name ?? "user";
+  print(nametoprint);
+  
+  
+  //SWITCH CASE STATEMENTS : APPLICABLE FOR ONLY INT AND STRING
+  
+  String grade = "D";
+  
+  switch (grade) {
+      
+    case "A":
+      print("A Grade");
+      break;
+      
+    case "B":
+      print("B Grade");
+      break;
+      
+    case "C":
+      print("C Grade");
+      break;
+      
+    default: print("fail");
+  }
+}
