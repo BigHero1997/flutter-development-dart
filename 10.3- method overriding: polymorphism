@@ -1,0 +1,47 @@
+void main()
+  {
+  Dog d = new Dog();
+  d.eat();
+  print(d.color);
+ 
+  }
+class Animal
+{
+  String color = "Brown";
+  
+  void eat()
+  {
+    print("Animal is eating");
+  }
+}
+class Dog extends Animal
+{
+  String color = "Black";
+  String breed;
+  
+  void bark()
+  {
+    print("bark");
+  }
+  
+  void eat()
+  {
+     super.eat();
+    
+     print("dog is eating");
+  }
+  
+}
+
+class Cat extends Animal
+{
+  
+  int age;
+  
+  void meow()
+  {
+    print("meow");
+  }
+  
+
+}
