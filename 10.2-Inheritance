@@ -1,0 +1,58 @@
+void main()
+  {
+  Dog d = new Dog();
+  d.breed = "Golden Retriver";
+  d.color = "Orange";
+  print(d.breed);
+  print(d.color);
+  d.bark();
+  d.eat();
+  print("");
+  Cat c = new Cat();
+  c.age = 15;
+  c.color = "Black";
+  print(c.age);
+  print(c.color);
+  c.meow();
+  c.eat();
+  
+  print("");
+  Animal a = new Animal();
+  a.color = "Brown";
+  print(a.color);
+  a.eat();
+ 
+  }
+class Animal
+{
+  String color;
+  
+  void eat()
+  {
+    print("eat");
+  }
+}
+class Dog extends Animal
+{
+ 
+  String breed;
+  
+  void bark()
+  {
+    print("bark");
+  }
+  
+}
+
+class Cat extends Animal
+{
+  
+  int age;
+  
+  void meow()
+  {
+    print("meow");
+  }
+  
+
+}
