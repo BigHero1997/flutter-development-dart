@@ -2,6 +2,7 @@
 //2. Catch clause with exception object
 //3. catch clause with exception object and stacktrace object
 //4. finally clause
+//5. Custom Exception Handling
 
 
 
@@ -54,5 +55,35 @@ void main()
     print("This is finally clause and always gets executed");
   }
   
- 
+  
+  print("");
+  print("CASE 5");
+  //case5: Custom Exception
+  
+  try{
+    deposit(-200);
+  } 
+  catch(e){
+    print(e.errormessage);
+  }
 }
+
+class DepositException implements Exception{
+  
+  String errormessage()
+  {
+    return "You cannot enter amount less than zero";
+  }
+
+  void deposit(int amount){
+    if (amount<0)
+    {
+      throw new DepositException();
+    }
+  }
+
+
+}
+
+
+                     
