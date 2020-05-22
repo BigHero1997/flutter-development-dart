@@ -1,0 +1,88 @@
+
+
+                    //classes and objects//
+void main()
+{
+
+Student s = new Student();   //reference variable
+  s.study();
+  s.sleep();
+
+}
+                     
+class Student
+{
+  int id = 101;     //instance variable
+  String name = "ketan";
+  
+  void study()
+  {
+    print("My id is $id and name is $name");
+    print("I study all day");
+   
+  }
+  
+  void sleep()
+  {
+    print("I sleep 8 hrs");
+  }
+}
+
+
+
+                      /***** Constructor*****/
+
+
+void main()
+{
+
+/*Student s = new Student();   //reference variable
+  s.study();
+  s.sleep();*/
+ Student s2= new Student(35,"ketan");
+ Student s3 = new Student.MyNamedConstructor();
+
+}
+                     
+class Student
+{
+  int id = 101;     //instance variable
+  String name = "ketan";
+  
+  
+ /* Student() //Default Constructor
+  {
+   print("Hello");
+  }*/
+  
+  Student(int id, String name) // parameterized constructor
+  {
+    this.id = id;
+    this.name =name;
+    print("$id   $name");
+  }
+                                        //Note: Default and parameterized constructor are not 
+                                        //allowed in a single class thats why it is commented.
+  
+  
+  
+  Student.MyNamedConstructor()     //Named Constructor
+  {
+    print("named constructor");
+  }
+  
+  
+  void study()
+  {
+    print("My id is $id and name is $name");
+    print("I study all day");
+   
+  }
+  
+  void sleep()
+  {
+    print("I sleep 8 hrs");
+  }
+}
+
+
