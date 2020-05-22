@@ -1,0 +1,34 @@
+// Default Getter and Setter
+// Custom Getter and Setter
+// Private Instance Variable
+
+void main()
+{
+  
+  Student s = new Student();
+  s.name="peter"; //calling default setter to set value
+  print(s.name);  //calling default getter to get value
+  
+  s.percentage = 440.0;
+  print(s.percentage);
+  
+}
+
+class Student
+{
+  String name;    //instance variable with default getter and setter
+  
+  double _percent; //dart doesnot have modifiers to make private or protected so we use '_'
+  
+  void set percentage(double marks) =>_percent = (marks/500)*100;  
+  
+  //instance variable with custom setter
+  //we must have to pass one parameter in the setter
+    
+
+  
+  double get percentage =>  _percent;  //instance variable with custom getter
+    // short hand syntax "fat arrow"
+  
+  
+}
