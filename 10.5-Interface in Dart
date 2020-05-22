@@ -1,0 +1,32 @@
+
+//dart do not have interface
+//we use class as interface in dart
+
+
+void main()
+{
+  Tv t = new Tv();
+  t.volumeup();
+  t.volumedown();
+  t.anothermethod();
+}
+class Remote
+{
+  void volumeup()
+  {
+    print("volume up from remote");
+  }
+  
+  void volumedown()
+  {
+    print("volume down from remote");
+  }
+}
+
+class AnotherClass
+{
+  void anothermethod()
+  {
+    
+  }
+}
