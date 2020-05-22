@@ -1,0 +1,51 @@
+void main()
+{
+  print(Circle.pi);
+  Circle.area();
+  
+  
+  //we cannot access the static variable or method with class object
+   Circle c = new Circle();
+ //   c.pi; // 4 bytes
+  Circle c2 = new Circle();
+  //c2.pi; // 4 bytes
+  
+  //total 8 bytes
+  
+  //but if we create pi as static it will only consume 4 bytes of memory
+  Circle.pi; // 4 bytes
+  Circle.pi; // no memory
+  
+  //Circle.pi= 6.14;   // value canoot be changed because of const.
+  
+  
+  
+  
+}
+
+class Circle
+{
+  static const double pi = 3.14;    //use const for not changing the value of static variable
+  String color;
+  
+  
+  static void area()
+  {
+    print("some code");
+    
+    //normalfunction(); //we cannot call instance function inside static method
+    
+   // this.color; //cant access instance variable inside static method
+  }
+  
+  void normalfunction()
+  {
+    Circle.area();  //we can call static method  
+    this.color="red";
+    Circle.pi;
+  
+    
+  }
+  
+  
+}
