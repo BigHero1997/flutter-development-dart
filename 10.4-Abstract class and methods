@@ -1,0 +1,20 @@
+void main()
+{
+  Rectangle r = new Rectangle();
+  r.draw();
+}
+
+abstract class Shape     //we cannot insantiate or create object of abstract class
+{
+  
+  void draw();         //abstract method can only exist within the abstract class
+ 
+}
+
+class Rectangle extends Shape
+{
+  void draw()
+  {
+    print("drawing rectangle");
+  }
+}
