@@ -1,0 +1,97 @@
+//fixed size list
+
+void main()
+{
+  List <int> numList = List(5);   //Fixed length list
+  numList[0] = 99;
+  numList[1] = 78;
+  numList[2] = 12;
+  numList[3] = 45;
+  numList[4] = 10;
+  
+  
+  numList[1] = 101;  //update operation
+  
+  print(numList[0]);
+  
+ // numList.remove(99);    this methods are not be performed in fixed length list
+ // numList.add(24);
+ // numList.removeAt(1);
+  
+  print("\n");
+  
+  for(int element in numList)    //using individual element
+  {
+    print(element);
+  }
+  
+  print("\n");
+  
+  for(int i = 0; i< numList.length; i++)   //using for loop
+  {
+    print(numList[i]);
+  }
+  
+  print("\n");
+  
+  numList.forEach((element) => print(element));  //using lambda
+   
+  
+}
+
+
+
+
+//growable list
+
+void main()
+{
+  List <int> numList = List();   //Growable list
+  numList.add(99);             // insert operation
+  numList.add(101);
+  numList.add(5);
+  numList.add(24);
+  numList.add(547);
+  
+  //one more method to define growable list
+  
+  List <String> countries = ["usa","sweden"];
+  countries.add("nepal");
+  countries.add("india");
+  String items;
+ countries.forEach((items) => print(items));  //using lambda
+  
+  
+  
+  numList[1] = 101;  //update operation
+  
+  print(numList[0]);
+  
+ numList.remove(99);    //this methods are not be performed in fixed length list
+ numList.add(24);
+ numList.removeAt(1);
+ // numList.clear();
+  //numList[3] = null;
+  
+  print("\n");
+  
+  for(int element in numList)    //using individual element
+  {
+    print(element);
+  }
+  
+  print("\n");
+  
+  for(int i = 0; i< numList.length; i++)   //using for loop
+  {
+    print(numList[i]);
+  }
+  
+  print("\n");
+  
+  numList.forEach((element) => print(element));  //using lambda
+  
+  
+  
+  
+}
