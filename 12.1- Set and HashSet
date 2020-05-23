@@ -1,0 +1,59 @@
+//set
+//unorderd collection of unique items
+//no duplicate entries
+//can't get elements by index bcause it is unordered
+
+//hashset
+//implementation of unorderd set
+//based on hash table based set implementation
+
+void main()
+{
+  Set <int> numSet = Set();   //1:using constructor
+  numSet.add(99);             // insert operation
+  numSet.add(101);
+  numSet.add(5);
+  numSet.add(24);
+  numSet.add(547);
+  //numSet.add(5); duplicate entries will be ignored
+  
+  print(numSet.contains(5));  //to check item present or not
+  numSet.remove(101);  //remove operation
+  print(numSet.length);
+  print(numSet.isEmpty);
+  
+  //one more method to define set  2 : from a list
+  
+  Set <String> countries = Set.from(["usa","sweden"]);
+  countries.add("nepal");
+  countries.add("india");
+  
+ countries.forEach((items) => print(items));  //using lambda
+  
+  
+  
+ 
+  
+  print("\n");
+  
+  for(int element in numSet)    //using individual element
+  {
+    print(element);
+  }
+  
+
+  
+  print("\n");
+  
+  numSet.forEach((element) => print(element));  //using lambda
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
