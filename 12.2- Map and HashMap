@@ -1,0 +1,58 @@
+//map
+//unordered collection of key value pair
+//key value can be any object type
+//each key in map should be unique
+//the value can be repeted
+//commonly called as hash or dictionary
+//size of map is not fixed
+
+//hashmap
+//implementation of map
+//based on hash table
+
+void main()
+{
+ 
+  Map <String ,int> countries = {      //method2: using literals
+    "india":1,"india":92,"nepal":85
+  };
+  
+  Map <String, String> fruits = Map();          //method 1: using constructor
+  fruits["apple"] = "red";
+  fruits["banana"] = "yellow";
+  fruits["lemon"] = "green";
+         //key//      //value//
+  
+  print(fruits.containsKey("apple"));    //returns true if key is present in map
+  fruits.update("apple", (value)=>"blue");   //update the value of a key
+  fruits.remove("lemon");   //delete key and value
+  fruits.isEmpty;    //returns map is empty ot not
+  fruits.length;   //returns length of map
+  //fruits.clear();  //to clear evrything
+  
+  
+  print(fruits["apple"]);           
+  
+  print("\n");
+  
+  for(String element in fruits.keys)     //printing only keys
+  {
+     print(element);
+  }
+  
+ print("\n");
+  
+  for(String element in fruits.values)    //printing only values
+  {
+     print(element);
+  }  
+  
+  print("\n");
+  fruits.forEach((key, value) => print("key=>$key and value=>$value"));  //using lambda
+              //printing both key and value
+  
+  
+  
+  
+  
+}
