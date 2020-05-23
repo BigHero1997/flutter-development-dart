@@ -1,0 +1,53 @@
+//Lambda Expressions
+//Note: A function in dart is object
+
+
+
+void main()
+{
+  
+  //1st way
+  
+  Function add = (int a, int b)
+{
+  int sum = a+b;
+  print(sum);
+};
+  
+  //calling lambda function
+  
+ add(3,2);
+ 
+ Function multiply = (int no){
+   
+   return no*4;
+ };
+  
+ print(multiply(4));
+  
+  
+  
+  //2nd way: FunctionExpression: Using short hand syntax or fat arrow(=>)
+  
+  Function addnum = (int a, int b) =>  print(a+b);
+
+  addnum(10,20);
+  
+  Function multiplynum = (int no) => no*4;
+  
+  print(multiplynum(10));
+}
+
+
+
+
+
+
+
+//normal function
+
+void addmynumber(int a, int b)
+{
+  int sum = a+b;
+  print(sum);
+}
